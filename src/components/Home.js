@@ -32,90 +32,67 @@ class Home extends Component{
   }
 
   playGame(cpu,p){
-    localStorage.setItem('prev', p);
 
     // console.log("p", p)
     if (cpu=="Rock"){
       if (p=="Rock"){
+        localStorage.setItem('prev', "Paper");
+
         return "Tie"
       }
       else if (p=="Paper"){
+        localStorage.setItem('prev', "Scissors");
+
         return "Player Wins"
 
       }
       else if (p=="Scissors"){
+        localStorage.setItem('prev', "Rock");
+
         return "Computer Wins"
 
       }
     }
     else if (cpu=="Paper"){
       if (p=="Rock"){
+        localStorage.setItem('prev', "Paper");
+
         return "Computer Wins"
       }
       else if (p=="Paper"){
+        localStorage.setItem('prev', "Scissors");
+
         return "Tie"
 
       }
       else if (p=="Scissors"){
+        localStorage.setItem('prev', "Rock");
+
         return "Player Wins"
 
       }
     }
     else if (cpu=="Scissors"){
       if (p=="Rock"){
+        localStorage.setItem('prev', "Paper");
+
         return "Player Wins"
       }
       else if (p=="Paper"){
+        localStorage.setItem('prev', "Scissors");
+
         return "Computer Wins"
       }
       else if (p=="Scissors"){
+        localStorage.setItem('prev', "Rock");
+
         return "Tie"
 
       }
     }
 
   }
-  tact_playGame(cpu,p){
-    console.log("play game");
-    if (cpu=="Rock"){
-      if (p=="Rock"){
-        return "Tie"
-      }
-      else if (p=="Paper"){
-        return "Player Wins"
 
-      }
-      else if (p=="Scissors"){
-        return "Computer Wins"
-
-      }
-    }
-    else if (cpu=="Paper"){
-      if (p=="Rock"){
-        return "Computer Wins"
-      }
-      else if (p=="Paper"){
-        return "Tie"
-
-      }
-      else if (p=="Scissors"){
-        return "Player Wins"
-
-      }
-    }
-    else if (cpu=="Scissors"){
-      if (p=="Rock"){
-        return "Player Wins"
-      }
-      else if (p=="Paper"){
-        return "Computer Wins"
-      }
-      else if (p=="Scissors"){
-        return "Tie"
-
-      }
-    }
-  }
   zoom(e) {
     e.target.style.fontSize = '20px';
     e.target.style.color =  'rgb(49, 180, 99)';
@@ -130,11 +107,7 @@ class Home extends Component{
 
   }
   get_tact()  {
-
     var t=localStorage.getItem('prev');
-
-    // console.log(t)
-    // console.log(this.state.nextMove)
     return t;
   }
   render(){
