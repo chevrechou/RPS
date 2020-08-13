@@ -1,0 +1,48 @@
+.home-container{
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+.result{
+  font-size: 32px;
+  font-weight: bold;
+}
+.p_choice{
+  font-size: 20px;
+  color :rgb(49, 180, 99);
+  font-weight :  bold;
+
+}
+ul{
+  justify-content: center;
+  display: flex;
+}
+.cpu_choice{
+  font-size: 20px;
+  color :orange;
+  font-weight :  bold;
+}
+.tac_choice{
+  margin-top: 25px;
+  font-size: 20px;
+  color : black;
+  width: fit-content;
+  margin: auto;
+  padding: 2px 5px;
+  background-color: orange;
+  font-style: italic;
+  font-weight :  bold;
+}
+li{
+  list-style-type: none;
+}
+.title{
+  background-color: rgb(49, 180, 99);
+  border: solid black 1px;
+  margin: 5px auto;
+  padding: 10px 10px;
+  font-size: 40px;
+}
+.footer{
+  margin-top: 50px;
+}
